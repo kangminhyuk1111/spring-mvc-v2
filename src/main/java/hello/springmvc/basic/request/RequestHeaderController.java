@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.IOException;
 import java.util.Locale;
 
 @RestController
@@ -29,6 +28,6 @@ public class RequestHeaderController {
             @RequestHeader("host") String host,
             @CookieValue(value = "myCookie", required = false) String cookie
     ) {
-
+        return "";
     }
 }
