@@ -40,6 +40,8 @@ public class RequestParamController {
     public String requestParamV4(String username, int age) {
         log.info("username : {}, age : {}", username, age);
         return "ok";
+
+
     }
 
     @ResponseBody
